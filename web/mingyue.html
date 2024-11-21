@@ -46,9 +46,23 @@
         transform: translate(-50%, -50%);
         z-index: 2; 
     }
+	#audioPlayer {
+            position: fixed; 
+            bottom: 20%;       
+            left: 60%;
+            transform: translateX(-50%); 
+            width: 100%;
+            max-width: 600px;
+            z-index: 1000;  
+        }
+ 
 </style>
 </head>
-<body>
+<body><div id="audioPlayer">
+  <audio preload="none" controls="controls" >
+    <source src="../music/只因.m4a" type="audio/x-m4a">
+  </audio>
+	</div>
 <div class="background-image"></div>
 <div class="text-on-image">你还在黑他吗？ <a href="https://ikun.tzk.icu/moments" target="_blank">是的</a> / <a href="https://fangkuai767.github.io/EatKun/" target="_blank">不</a></div>
 <img src="../image.2/4337e81bd5784c21984de88f01c5e30e.gif" alt="ikun" usemap="#Map"class="gif-image-1">
